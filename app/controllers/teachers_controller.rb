@@ -1,6 +1,6 @@
 class TeachersController < ApplicationController
   before_action :set_teacher, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:index, :show, :new]
+  skip_before_filter :verify_authenticity_token
 
   # GET /teachers
   # GET /teachers.json

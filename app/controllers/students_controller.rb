@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:index, :show, :new]
+  skip_before_filter :verify_authenticity_token
 
   # GET /students
   # GET /students.json
