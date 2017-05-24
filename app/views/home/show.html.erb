@@ -1,4 +1,9 @@
-<h1>main</h1>
-<%= link_to "Courses", courses_path %>
-<%= link_to "Teachers", teachers_path %>
-<%= link_to "Students", students_path %>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="list-group">
+      <%= link_to "Courses", courses_path, :class=>"list-group-item" %>
+      <%= link_to "Teachers", teachers_path, :class=>"list-group-item" %>
+      <%= link_to "Students", students_path, :class=>"list-group-item" %>
+    </div>
+  </div>
+</div>
